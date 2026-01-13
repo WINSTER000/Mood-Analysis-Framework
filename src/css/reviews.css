@@ -1,0 +1,379 @@
+/* Import the existing Tailwind V4 globals */
+@import url('./styles/globals.css');
+
+/* Additional Component Styles with Review Prefix */
+
+/* Container */
+.review-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Layout Utilities */
+.review-min-h-screen { min-height: 100vh; }
+.review-flex { display: flex; }
+.review-flex-col { flex-direction: column; }
+.review-flex-1 { flex: 1 1 0%; }
+.review-grid { display: grid; }
+.review-hidden { display: none; }
+.review-block { display: block; }
+
+/* Flexbox & Grid */
+.review-items-center { align-items: center; }
+.review-justify-between { justify-content: space-between; }
+.review-justify-center { justify-content: center; }
+.review-gap-1 { gap: 0.25rem; }
+.review-gap-2 { gap: 0.5rem; }
+.review-gap-3 { gap: 0.75rem; }
+.review-gap-4 { gap: 1rem; }
+.review-gap-8 { gap: 2rem; }
+.review-space-y-2 > * + * { margin-top: 0.5rem; }
+.review-space-y-3 > * + * { margin-top: 0.75rem; }
+.review-space-y-4 > * + * { margin-top: 1rem; }
+.review-space-y-6 > * + * { margin-top: 1.5rem; }
+.review-flex-wrap { flex-wrap: wrap; }
+
+/* Grid Templates */
+.review-grid { display: grid; }
+.review-md-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* Spacing */
+.review-p-3 { padding: 0.75rem; }
+.review-p-4 { padding: 1rem; }
+.review-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.review-py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.review-py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.review-px-4 { padding-left: 1rem; padding-right: 1rem; }
+.review-mb-3 { margin-bottom: 0.75rem; }
+.review-mb-4 { margin-bottom: 1rem; }
+.review-mb-8 { margin-bottom: 2rem; }
+.review-mt-8 { margin-top: 2rem; }
+.review-pt-6 { padding-top: 1.5rem; }
+
+/* Sizing */
+.review-w-4 { width: 1rem; }
+.review-w-5 { width: 1.25rem; }
+.review-w-6 { width: 1.5rem; }
+.review-w-8 { width: 2rem; }
+.review-h-4 { height: 1rem; }
+.review-h-5 { height: 1.25rem; }
+.review-h-6 { height: 1.5rem; }
+.review-h-8 { height: 2rem; }
+.review-max-w-2xl { max-width: 42rem; }
+.review-max-w-4xl { max-width: 56rem; }
+.review-min-w-32 { min-width: 8rem; }
+.review-min-h-32 { min-height: 8rem; }
+.review-w-full { width: 100%; }
+.review-mx-auto { margin-left: auto; margin-right: auto; }
+.review-p-3 { padding: 0.75rem; }
+
+/* Text Utilities */
+.review-text-xs { font-size: 0.75rem; line-height: 1rem; }
+.review-text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.review-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.review-text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.review-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.review-font-bold { font-weight: 700; }
+.review-text-center { text-align: center; }
+.review-text-primary { color: var(--color-primary); }
+.review-text-muted-foreground { color: var(--color-muted-foreground); }
+.review-text-green-500 { color: #22c55e; }
+.review-text-red-500 { color: #ef4444; }
+.review-text-yellow-500 { color: #eab308; }
+
+/* Background Colors */
+.review-bg-background { background-color: var(--color-background); }
+.review-bg-green-500 { background-color: #22c55e; }
+.review-bg-red-500 { background-color: #ef4444; }
+.review-bg-yellow-500 { background-color: #eab308; }
+
+/* Border */
+.review-border-b { border-bottom: 1px solid var(--color-border); }
+.review-border-t { border-top: 1px solid var(--color-border); }
+.review-border { border: 1px solid var(--color-border); }
+.review-rounded-lg { border-radius: 0.5rem; }
+.review-rounded-full { border-radius: 9999px; }
+
+/* Effects */
+.review-backdrop-blur { backdrop-filter: blur(8px); }
+.review-transition-colors { transition-property: color, background-color, border-color; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+
+/* Cursor */
+.review-cursor-pointer { cursor: pointer; }
+
+/* Header Component */
+.review-header {
+  border-bottom: 1px solid var(--color-border);
+  background-color: color-mix(in srgb, var(--color-background) 95%, transparent);
+  backdrop-filter: blur(8px);
+}
+
+/* Footer Component */
+.review-footer {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+/* Card Components */
+.review-card {
+  background-color: var(--color-card);
+  color: var(--color-card-foreground);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.review-card-header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.review-card-content {
+  padding: 1.5rem;
+}
+
+.review-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Button Components */
+.review-btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.review-btn-primary:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.review-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.review-btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.review-btn-outline:hover {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+.review-btn-ghost {
+  background-color: transparent;
+  color: var(--color-foreground);
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.review-btn-ghost:hover {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+.review-btn-icon {
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.review-btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid white;    
+  padding: 4px 20px;
+}
+
+/* Badge Components */
+.review-badge-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+  border: 1px solid transparent;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.review-badge-outline {
+  background-color: transparent;
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Form Components */
+.review-textarea {
+  background-color: var(--color-input-background);
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  width: 100%;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-ring) 20%, transparent);
+}
+
+.review-textarea::placeholder {
+  color: var(--color-muted-foreground);
+}
+
+/* Progress Bar Components */
+.review-progress-bar {
+  background-color: var(--color-secondary);
+  height: 0.5rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-progress-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .review-md-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Dark Mode Support */
+.supports-\[backdrop-filter\]\:bg-background\/60 {
+  background-color: color-mix(in srgb, var(--color-background) 60%, transparent);
+}
+
+/* Line Clamp */
+.review-line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hover Effects */
+.review-hover-text-foreground:hover {
+  color: var(--color-foreground);
+}
+
+/* Animation for analyzing state */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.review-animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted-foreground);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-foreground);
+}
+
+.review-analyze-btn{
+  border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .review-flex-wrap{
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .review-analyze-btn{
+    border-bottom-left-radius: 0px;
+  }
+
+  .positive-btn{
+    padding: 6px;
+  }
+  
+  .negitive-btn{
+    padding: 6px;
+  }
+
+  .neutral-btn{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 6px;
+  }
+}
