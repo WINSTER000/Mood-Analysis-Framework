@@ -12,9 +12,8 @@
 **MoodAF (Mood Analysis Framework)** is a frontend movie companion designed to help users discover movies, explore detailed movie information, read reviews, analyze review sentiment, and maintain a personal watchlist.
 
 The application uses the **TMDB API** for movie information and implements a lightweight client-side sentiment analysis system for movie reviews.
-<img width="1280" height="865" alt="1769580463785" src="https://github.com/user-attachments/assets/b79ded5e-1dbb-4582-8253-75034323fc5a" />
+<img width="1280" height="865" alt="1769580463785" src="https://github.com/user-attachments/assets/b79ded5e-1dbb-4582-8253-75034323fc5a" /> <br>
 <img width="1280" height="842" alt="1769580462840" src="https://github.com/user-attachments/assets/9f62f75b-1e49-48b0-a9e3-a46f2f0f1286" />
-<img width="1280" height="866" alt="1769580463025" src="https://github.com/user-attachments/assets/1f7dca5d-567f-4e51-93f6-f96b39d9a88c" />
 
 ## Features
 
@@ -42,6 +41,8 @@ The application uses the **TMDB API** for movie information and implements a lig
 - Watchlist item counter
 - Watchlist statistics
 - Watchlist data stored locally in the browser
+
+<img width="1280" height="866" alt="1769580463025" src="https://github.com/user-attachments/assets/1f7dca5d-567f-4e51-93f6-f96b39d9a88c" />
 
 ### 📊 Review Sentiment Analysis
 - Enter a movie review for analysis
