@@ -372,7 +372,7 @@ https://github.com/WINSTER000/Mood-Analysis-Framework
 
 Website Link:
 
-https://github.com/WINSTER000/Mood-Analysis-Framework](https://winster000.github.io/Mood-Analysis-Framework
+https://winster000.github.io/Mood-Analysis-Framework
 
 ---
 
